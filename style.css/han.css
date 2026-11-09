@@ -1,0 +1,112 @@
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(141, 215, 241);
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1 {
+    color: rgb(238, 81, 188);
+    font-size: 50px;
+}
+
+h2 {
+    color:  rgb(238, 81, 188);
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.members p {
+    background-color: #222;
+    color: white;
+    border: 1px solid rgb(238, 81, 188);
+    padding: 20px;
+    width: 100px;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.members img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid  rgb(238, 81, 188);
+}
+
+.members p {
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background: #f6f33e;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: rgb(141, 215, 241);
+    text-decoration: none;
+    margin: 5px;
+}
+
+nav a:hover {
+    color: rgb(238, 81, 188);
+}
+
+.search {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.account-box {
+    background-color: #f6f33e;
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid rgb(238, 81, 188);
+    border-radius: 10px;
+}
+
+.account-box h2 {
+    color: rgb(238, 81, 188);
+}
+
+.account-box p {
+    color: gray;
+    font-size: 12px;
+}
+
+.account-box input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.account-box button {
+    width: 90%;
+    margin: 15px 0;
+    background-color: darkred;
+}
+
+.account-box button:hover {
+    background-color: red;
+}

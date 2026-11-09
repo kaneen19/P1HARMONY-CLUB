@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1Harmony Fanpage</title>
+    <link rel="stylesheet" href="style.css/han.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#members">MEMBERS</a>
+        <a href="#join">JOIN</a>
+
+        <div class="search">
+            <input type="text" id="search"
+            placeholder="Search P1Harmony...">
+
+            <button onclick="searchMember()">SEARCH</button>
+        </div>
+    </nav>
+
+    <h1 id="home">P1Harmony club</h1>
+    <p>WELCOME TO MY P1H CLUB</p >
+
+    <img src="images/p1h_photo2.jpg" width="400">
+
+    <h2 id="about">ABOUT P1HARMONY</h2>
+    <p> 南韩最后六个视觉系 </p>
+    <p>揣着和皮万相比那我还是觉得我们皮万牛逼</p>
+    <p>BTS曾说过如果皮万哈莫尼不是世团一 那么没人敢说自己是</p>
+    <p>出道六年来曾多次拒绝JustinBieber合作邀约</p>
+
+    <h2 id="members">MEMBERS</h2>
+
+    <div class="members">
+
+        <div class="member">
+            <img src="images/KEEHO.jpg">
+            <p>KEEHO</p >
+        </div>
+
+        <div class="member">
+            <img src="images/THEO.jpg">
+            <p>THEO</p >
+        </div>
+
+        <div class="member">
+            <img src="images/JIUNG.jpg">
+            <p>JIUNG</p >
+        </div>
+
+        <div class="member">
+            <img src="images/INTAK.jpg">
+            <p>INTAK</p >
+        </div>
+
+        <div class="member">
+            <img src="images/SOUL.jpg">
+            <p>SOUL</p >
+        </div>
+
+        <div class="member">
+            <img src="images/JONGSEOB.jpg">
+            <p>JONGSEOB</p >
+         </div>
+
+    </div>
+
+
+    <h2 id="join">JOIN OUR COMMUNITY</h2>
+
+    <div class="account-box">
+
+        <h2>LOGIN</h2>
+        <p>WELCOME BACK, P1ECE</p >
+
+        <input type="email" placeholder="Email">
+
+        <input type="password" placeholder="Password">
+
+        <button>LOGIN</button>
+
+        <hr>
+
+        <h2>REGISTER</h2>
+        <p>CREATE YOUR ACCOUNT</p >
+
+        <input type="text" placeholder="Username">
+
+        <input type="email" placeholder="Email">
+
+        <input type="password" placeholder="Password">
+
+        <button>REGISTER</button>
+
+    </div>
+
+    <script>
+        function searchMember() {
+            let word = document.getElementById("search").value.toLowerCase();
+            let members = document.querySelectorAll(".member");
+
+         members.forEach(function(member) {
+            if (member.innerText.toLowerCase().includes(word)) {
+                member.style.display = "block";
+            } 
+            else {
+                 member.style.display = "none";
+            }
+            });
+
+        }
+    </script>
+
+</body>
+</html>
